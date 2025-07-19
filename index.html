@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhi Suryavanshi - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0); /* Soft pink gradient */
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2); /* Pinkish shadow */
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #ff69b4, #ff1493); /* Hot pink gradient */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Pill shape */
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #ff1493, #ff69b4);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+        }
+        .social-icon {
+            color: #ff69b4; /* Pink icon color */
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #ff1493; /* Darker pink on hover */
+            transform: scale(1.1);
+        }
+        /* Custom styling for sections */
+        .section-title {
+            color: #ff69b4; /* Pink heading */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        @keyframes bounce-soft {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
+
+.hover\\:animate-bounce-soft:hover {
+    animation: bounce-soft 0.6s ease-in-out;
+}
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white bg-opacity-80 shadow-md py-4 sticky top-0 z-50 backdrop-blur-sm">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-pink-500">Siddhi's Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-700 hover:text-pink-500 font-medium transition duration-300">Home</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-pink-500 font-medium transition duration-300">About</a></li>
+                    <li><a href="#skills" class="text-gray-700 hover:text-pink-500 font-medium transition duration-300">Skills</a></li>
+                    <li><a href="#socials" class="text-gray-700 hover:text-pink-500 font-medium transition duration-300">Socials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 text-center">
+        <div class="container flex flex-col md:flex-row items-center justify-center gap-10">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-pink-300 shadow-lg">
+                <img src="background.jpeg" alt="Siddhi Suryavanshi" class="object-cover w-full h-full">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-5xl font-extrabold text-pink-600 mb-4 leading-tight">Hello, I'm <br><span class="text-purple-500">Siddhi:)</span></h2>
+                <p class="text-xl text-gray-600 mb-6">A passionate Sophomore exploring the world of technology.</p>
+                <a href="#about" class="btn-primary">Learn More About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16">
+        <div class="container card">
+            <h3 class="section-title text-4xl">About Me</h3>
+            <div class="text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Hello everyone! This is Siddhi Suryavanshi, pursuing <span class="font-semibold text-pink-500">computer science and engineering</span> at <span class="font-semibold text-pink-500">Jaypee Institute of Information Technology,Sector-62,Noida</span>.
+                     I'm eager to contribute in innovative projects, learn and grow in the process.
+                </p>
+                <p>
+                    Currently, I am a beginner in Data Structures and Algorithms ,
+                    constantly working to strengthen my problem-solving skills and foundational knowledge. At the development front,
+                    I am currently exploring frontend development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container card">
+            <h3 class="section-title text-4xl">My Skill Set</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-lg text-gray-700">
+                <div class="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg shadow-sm">
+                    <i class="fas fa-code text-pink-400 text-2xl"></i>
+                    <span>C / C++</span>
+                </div>
+                <div class="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg shadow-sm">
+                    <i class="fab fa-python text-pink-400 text-2xl"></i>
+                    <span> Python</span>
+                </div>
+                <div class="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg shadow-sm">
+                    <i class="fab fa-java text-pink-400 text-2xl"></i>
+                    <span>Basic Java</span>
+                </div>
+                <div class="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg shadow-sm">
+                    <i class="fas fa-database text-pink-400 text-2xl"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg shadow-sm">
+                    <i class="fab fa-html5 text-pink-400 text-2xl"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg shadow-sm">
+                    <i class="fab fa-css3-alt text-pink-400 text-2xl"></i>
+                    <span>CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hobbies & Interests Section -->
+<section id="hobbies" class="py-16">
+    <div class="container card">
+        <h3 class="section-title text-4xl">My Hobbies & Interests</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-lg text-gray-700 mt-6">
+            <div class="flex items-center space-x-4 p-4 bg-pink-50 rounded-lg shadow-sm hover:animate-bounce-soft transition duration-300 ease-in-out">
+                <i class="fas fa-book text-pink-400 text-3xl"></i>
+                <span>Reading Books</span>
+            </div>
+            <div class="flex items-center space-x-4 p-4 bg-pink-50 rounded-lg shadow-sm hover:animate-bounce-soft transition duration-300 ease-in-out">
+                <i class="fas fa-music text-pink-400 text-3xl"></i>
+                <span>Listening to Music</span>
+            </div>
+            <div class="flex items-center space-x-4 p-4 bg-pink-50 rounded-lg shadow-sm hover:animate-bounce-soft transition duration-300 ease-in-out">
+                <i class="fas fa-music text-pink-400 text-3xl fa-spin-pulse"></i>
+                <span>Dancing</span>
+            </div>
+            <div class="flex items-center space-x-4 p-4 bg-pink-50 rounded-lg shadow-sm hover:animate-bounce-soft transition duration-300 ease-in-out">
+                <i class="fas fa-map-marked-alt text-pink-400 text-3xl"></i>
+                <span>Exploring New Places</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Socials Section -->
+    <section id="socials" class="py-16">
+        <div class="container card text-center">
+            <h3 class="section-title text-4xl">Connect With Me!</h3>
+            <div class="flex justify-center space-x-8 mt-6">
+                <a href="https://www.linkedin.com/in/siddhi-suryavanshi-689906321/" target="_blank" rel="noopener noreferrer" class="social-icon text-5xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/__.sid.dhi.__?igsh=ZGt3Zm9nNncyZjYw&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-icon text-5xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/siddhi472006" target="_blank" rel="noopener noreferrer" class="social-icon text-5xl">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+</body>
+</html>
